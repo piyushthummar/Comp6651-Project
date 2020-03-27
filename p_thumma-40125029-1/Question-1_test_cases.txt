@@ -1,0 +1,30 @@
+Test-case : 1
+5
+A d 9
+B d 3
+C e 9
+d z 8
+e z 3
+
+Test-case : 2
+4
+A d 9
+C e 9
+d z 8
+e z 3
+
+Test-case : 3
+5
+A d 9
+B d 7
+C d 5
+d z 8
+e z 3
+
+Test-case : 4
+5
+A d 9
+B d 7
+C D 5
+D z 8
+d z 3
