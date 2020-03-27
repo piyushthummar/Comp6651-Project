@@ -1,8 +1,5 @@
 package com.comp6651;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -10,7 +7,7 @@ import java.util.Scanner;
 public class SocretesCows {
 
 	public SocretesCows() {
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	static char source[];
@@ -22,7 +19,6 @@ public class SocretesCows {
 		
 		Scanner scan = new Scanner(System.in);
 		noOfPath = scan.nextInt();
-//		ArrayList<String> paths = new ArrayList<>();
 		scan.nextLine();
 		
 		source = new char[noOfPath];
@@ -50,7 +46,6 @@ public class SocretesCows {
 			}
 			break;
 		}
-		System.out.println("Done!!");
 		char meadow = pathToStable.keySet().toArray()[0].toString().charAt(0);
 		int minTimeToReachStable = (int) pathToStable.values().toArray()[0];
 		for(Map.Entry<String, Integer> entry : pathToStable.entrySet()) {
@@ -60,19 +55,12 @@ public class SocretesCows {
 			}
 		}
 		System.out.println(meadow + " " + minTimeToReachStable);
-//		for(String s : paths) {
-//			
-//		}
-//		System.out.println(noOfPath);
-//		for(int index=0; index < noOfPath; index++) {
-////			System.out.println(paths.get(index));
-//		}
+
 	}
 	public static void goToPath(char src, char dest, int time, int totalTime, String path) {
 		if(dest == 'z') {
 			totalTime += time;
 			pathToStable.put(path, totalTime);
-			System.out.println(path + " -> " + totalTime);
 		} else {
 			totalTime += time;
 			src = dest;
