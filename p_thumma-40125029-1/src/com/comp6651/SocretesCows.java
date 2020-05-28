@@ -15,6 +15,7 @@ public class SocretesCows {
 	static int[] cost;
 	static int noOfPath;
 	static Map<String, Integer> pathToStable = new HashMap<>();
+	
 	public static void main(String[] args) {
 		
 		Scanner scan = new Scanner(System.in);

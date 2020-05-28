@@ -10,6 +10,7 @@ public class Red {
 	}
 	static int n;
 	static int[] startInterval, endInterval;
+	
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		n = scanner.nextInt();
@@ -47,6 +48,7 @@ public class Red {
 		
 		//Generating all possible sets from given graph
 		ArrayList<String> allPossibleSets = new ArrayList<>();
+		
 		for(int index = 0; index < (1 << n); index++) {
 //			allPossibleSets.add(Integer.toString(index));
 			String s = "";

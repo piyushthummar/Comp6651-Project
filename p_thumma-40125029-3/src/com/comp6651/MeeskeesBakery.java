@@ -13,7 +13,11 @@ public class MeeskeesBakery {
 		Scanner scanner = new Scanner(System.in);
 		n = scanner.nextInt();
 		scanner.nextLine();
+		
 		ArrayList<Integer>[] queues = new ArrayList[n];
+		int timeCount = 0;
+		int[] currentIndexOfQueues = new int[n];
+		
 		for(int index=0; index < n; index++) {
 			String[] s = scanner.nextLine().split(" ");
 			queues[index] = new ArrayList<>();
@@ -24,8 +28,7 @@ public class MeeskeesBakery {
 			}
 		}
 		
-		int timeCount = 0;
-		int[] currentIndexOfQueues = new int[n];
+		
 		//Initialization of current position of each queue
 		for(int index=0; index<n; index++) {
 			currentIndexOfQueues[index] = 1;
